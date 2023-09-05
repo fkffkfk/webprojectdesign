@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .navi{width: 800px; height: 100px; margin:0px auto; padding:20px; border-bottom: 3px solid black; 
+       }
+      #signup{width: 600px; height:300px; margin:0px auto; padding:20px;}
+    ul{list-style: none; padding: 20px;}
+
+    ul li{float: left; display: block;
+           margin: 10px ;padding: 0px 20px;
+         }
+     li{text-decoration: none;}
+     navi a:link, navi a:visited{text-decoration: none; color: red; font-weight: bold; background-color: rgba(137, 43, 226, 0.452);}
+
+    #t1 :nth-child(1){background: pink;}
+    #t1 :nth-of-type(3){background: skyblue;}
+    #t1 :nth-last-of-type(3){background: blue;}
+    #t1 p:nth-child(2n){font-weight: bold;}
+    #t1 :nth-child(3){color: lawngreen;}
+    #t1 p:last-of-type{background: lemonchiffon;}
+    #t1:nth-child(2n)::before{center:"new" 
+                                color: blue;}
+
+    #signup input:checked+label{color: red;}
+#signup fieldset:first-of-type label{float: left; width: 110px;}
+
+    #signup button{width: 120px; height: 40px; margin: 20px auto; display: block;}
+    #signup button :hover{background-color: rgb(0, 4, 255)}
+
+    
+   
+    </style>
+</head>
+<body>
+    
+    <nav class="navi">
+        <ul>
+          <li><a href="0502_1.html">이용 안내</a></li>
+          <li><a href="#room">객실 소개</a></li>
+          <li><a href="res1">예약 방법 및 요금</a></li>
+          <li><a href="#signup">예약하기</a></li>
+        </ul>
+      </nav> 
+
+    <form id="signup">    
+    
+        <fieldset>
+  
+          <legend>개인 정보</legend>
+  
+          <ul>
+            <li>
+              <label for="fullname">이름</label>
+              <input id="fullname" name="fullname" type="text" required>
+            </li>
+            <li>
+              <label for="tel">연락처</label>
+              <input id="tel" name="tel" type="tel">
+            </li>          
+          </ul>
+  
+        </fieldset>
+  
+        <fieldset>  
+  
+          <legend>객실 형태</legend>
+  
+          <ul>
+            <li>
+              <input type="radio" name="room" id="basic">
+              <label for="basic">기본형(최대 2인)</label>
+            </li>      
+            <li>
+              <input type="radio" name="room" id="family">
+              <label for="family">가족형(최대 8인)</label>
+            </li>          
+          </ul>
+  
+        </fieldset>
+  
+        <button type="submit"> 제출 </button> 
+  
+      </form>
+  
+<div id="t1">
+     <h1>test</h1>
+     <p>test1</p>
+     <h2>테스트</h2>
+     <p>test2</p>
+     <p class="new">test3</p>
+     <p>test4</p>
+</div>
+
+</body>
+</html>

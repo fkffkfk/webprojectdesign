@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            text-align:center;
+        }
+    </style>
+</head>
+<body>
+<div id="color">색상 놀이</div>
+<div id="color2">색상바꾸기2</div>
+<span id="ch_text">색상변경할 텍스트</span>
+<button onclick="color_ch()">색상변경</button><nbsp></nbsp>
+
+<script>
+    /*
+color.onclick=function(){  
+    var sel=prompt("색상을 선택하세요")
+    switch(sel){
+        case "1": document.write("<p style='color:red'>RED</p>")
+            break;
+        case "2": document.write("<p style='color:green'>GREEN</p>")
+            break; 
+        case "3": document.write("<p style='color:blue'>BLUE</p>")
+            break;
+        case "4": document.write("<p style='color:purple'>PURPLE</p>")
+            break;}*/
+
+        function color_ch(){
+
+            var sel=prompt("색상을 선택하세요1:red 2:green 3:blue 4:purple");
+
+            switch(sel){
+        case "1": ch_text.style.background="rgb(0,0,255)";
+        /*prompt는 문자로 입력받음*/
+            break;
+        case "2": ch_text.style.background="rgb(0,255,255)";
+            break; 
+        case "3": ch_text.style.background="rgb(255,0,255)";
+            break;
+        case "4": ch_text.style.background="rgb(255,0,0)";
+            break;
+        default:
+            alert("잘못입력하셨씁니ㅏㄷ")
+            
+        }
+    }
+        
+</script>
+
+</body>
+</html>

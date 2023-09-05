@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body> 
+    <script>
+       var num=parseInt(prompt("입장하는 인원 수")); 
+       var col=parseInt(prompt("한 줄에 배치할 인원 수"));
+       var k=1;
+       var line=num/col;
+
+    for (i=1;i<line+1;i++)
+    {
+        for(j=i;j<col+i;j++)
+        {
+            document.write("<b>좌석</b>"+k+"  ");
+            k=k+1;
+        }
+        document.write("<br>");        
+    }
+    </script>
+</body>
+</html>

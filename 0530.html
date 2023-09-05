@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{text-align:center;}
+        .but1{
+            width:120px; height:40px; margin:10px auto;
+            }
+    </style>
+</head>
+<body>
+    
+    <button onclick="cal1()" class="but1">합계</buotton>
+       
+    <button onclick="cal2()" class="but1">합계2</button>
+
+    <button onclick="cal3()" class="but1">약수</button>
+
+    <button onclick="cal4()" class="but1">소수</button>
+  
+    <script>
+        function cal1(){
+            var i,sum=0;
+            for(i=1;i<=5;i++)
+            {
+                sum=sum+i;
+            }
+            alert(sum)
+            
+        }
+
+        function cal2(){
+            var n1=parseInt(prompt("첫번째 숫자를 입력하세요."));
+            parseInt
+            document.write(n1);
+            var n2=parseInt(prompt("두번째 숫자를 입력하세요."));
+            document.write(n2);
+
+            var i,sum=0;
+            for(i=n1;i<n2+1;i++)
+            {
+                sum=sum+i;
+            }
+            alert(sum);
+
+        }
+
+        function cal3(){
+            var n=parseInt(prompt("숫자를 입력하세요"));
+            var s="";
+            for(i=1;i<n+1;i++)
+            {
+                if (n%i==0)
+                {s=s+i+" ";}
+                /*이게 기본이다...?!*/
+            }
+            alert(n+"의 약수 : "+s)
+            document.write(n+"의 약수 : "+s);
+        }
+
+        function cal4(){
+            var n=parseInt(prompt("숫자를 입력하세요"));
+
+            for(i=2;i<n;i++)
+            {
+                if(n%i!=0){
+                    alert(n+"은 소수입니다")
+                    document.write(n+"은 소수입니다.");
+                    break;
+                }
+                else{
+                    alert(n+"은 소수가 아닙니다")
+                    document.write(n+"은 소수가 아닙니다.");
+                    break;}
+                /*else if(i==a-1) {alert("소수입니다")}*/
+            }
+        }
+    
+        
+
+    </script>
+</body>
+</html>
